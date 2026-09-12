@@ -1,47 +1,65 @@
-# Hi there, I'm Junghoon Lee 👋
+# 👨‍💻 이정훈 | Embedded & Robotics Software Engineer
 
-### 🤖 Embedded & Robotics Software Engineer
-> 하드웨어의 제약을 이해하고, 최적화된 제어 로직과 비전 AI 파이프라인을 설계·구현합니다.  
-> SRS(요구사항 명세)와 ICD(인터페이스 통제) 기반의 체계적인 임베디드 및 ROS2 소프트웨어 개발을 지향합니다.
+> **"하드웨어 제약을 소프트웨어 최적화로 극복하는 엔지니어"**  
+> 단순 부품 조립을 넘어, 명확한 요구사항 분석(SRS)과 인터페이스 설계(ICD)를 바탕으로 안정적인 펌웨어 및 ROS2 기반 분산 시스템을 개발합니다.
 
-- ✉️ **Contact:** junghoonlee.dev00@gmail.com
-- 📝 **Portfolio:** https://app.notion.com/p/Lee-Jeong-Hoon-3d9a79c60d2280548747f958eb2c033c
-
----
-
-### 🛠️ Tech Stacks
-
-#### Languages
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-
-#### Embedded & Firmware
-<img src="https://img.shields.io/badge/STM32-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white"/> <img src="https://img.shields.io/badge/FreeRTOS-008080?style=for-the-badge&logo=freertos&logoColor=white"/> <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white"/>
-
-#### Robotics & OS
-<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/> <img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white"/> <img src="https://img.shields.io/badge/Gazebo-F58025?style=for-the-badge&logoColor=white"/>
-
-#### Vision & Edge AI
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/> <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logoColor=black"/>
+- 📧 **Email:** junghoonlee.dev00@gmail.com
+- 🔗 **GitHub:** [github.com/dlwjdgns](https://github.com/dlwjdgns)
 
 ---
 
-### 🚀 Key Projects
+## ⚙️ Tech Stacks
 
-- **[VIP_Wearable]** 시각장애인 보행 보조 시스템 (제24회 임베디드 SW 경진대회)
-  - YOLO26n-sem 기반 도로/인도 실시간 세그먼테이션 & LiteRT INT8 경량화
-  - STM32 초음파/낙상 감지 펌웨어 및 TMAP 보행자 경로 연동
-- **[Pinky_Nav2]** ROS2 Gazebo 자율 순찰 및 정밀 후진 도킹 AMR
-  - Nav2 + AMCL 기반 다중 웨이포인트 자율주행
-  - PID 제어 기반 충전 스테이션 후진 정밀 도킹 알고리즘 구현
-- **[Multi-Node CAN RC Car]** 분산 제어 기반 차량 펌웨어
-  - CAN ICD(통신 규격) 설계, 다중 노드 분산 통신
-  - 32bit 타이머 입력 캡처 기반 속도 측정 및 비상 제동 인터럽트 로직
+| Classification | Technologies |
+| :--- | :--- |
+| **Languages** | C, C++, Python |
+| **Embedded & MCU** | STM32 (F103/F411/H523), ATmega328P, FreeRTOS, STM32CubeMX |
+| **Robotics & OS** | Ubuntu 24.04 LTS, ROS2 (Humble/Jazzy), Gazebo, Nav2 |
+| **Vision & Edge AI** | TensorFlow, OpenCV, YOLO, LiteRT (INT8 Quantization), MediaPipe |
+| **Protocols & Tools** | CAN, UART, I2C, SPI, Git/GitHub, CMake |
 
 ---
 
-### 📊 GitHub Stats
+## 🚀 Key Projects
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dlwjdgns&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dlwjdgns&layout=compact&theme=tokyonight" alt="Top Langs" />
-</p>
+### 1. VIP Wearable (시각장애인 보행 보조 시스템)
+- **Period:** 2026.08 (제24회 임베디드 SW 경진대회)
+- **Role:** 팀장 (시스템 아키텍처 설계, 비전 AI 경량화 및 펌웨어 통합)
+- **Stack:** Raspberry Pi 5, STM32F411RE, Ubuntu 24.04, Python, C
+- **Key Features:**
+  - **Edge AI Semantic Segmentation:** YOLO26n-sem 모델을 최적화하여 4개 주요 클래스(0: 도로, 1: 인도, 2: 횡단보도, 3: 점자블록) 실시간 인식
+  - **INT8 양자화 최적화:** LiteRT INT8 Quantization을 적용하여 mIoU 방어 및 온디바이스 추론 지연 최소화
+  - **센서 융합 및 인터럽트 펌웨어:** STM32F411RE 기반 초음파 센서(HC-SR04) 데이터 처리, 낙상 감지 알고리즘 구현 및 Bluetooth 통신 전송
+  - **보행 내비게이션:** TMAP API 연동을 통한 보행자 맞춤형 경로 가이드 통합
+
+---
+
+### 2. Pinky (자율 순찰 및 정밀 도킹 AMR)
+- **Period:** 2026.08
+- **Role:** 1인 개발 (ROS2 내비게이션 및 제어 로직 전담)
+- **Stack:** ROS2 (Jazzy), Gazebo Ignition, RViz2, Python
+- **Key Features:**
+  - **Nav2 자율주행 파이프라인:** AMCL 기반 위치 추정 및 복수 웨이포인트 순환 순찰 액션 서버 구현
+  - **PID 제어 기반 후진 정밀 도킹:** 글로벌 경로 플래너 한계를 극복하기 위해 충전 스테이션 진입 시 자체 개발한 후진 정밀 도킹 PID 알고리즘 적용
+  - **3D 시뮬레이션 모델링:** URDF/Xacro를 활용한 로봇 kinematics 및 LiDAR/Camera 센서 모델링, SDF 가제보 환경 구축
+
+---
+
+### 3. CAN-Bus 기반 다중 노드 RC 카 시스템
+- **Period:** 2026.07 ~ 2026.08
+- **Role:** 메인 ECU 펌웨어 개발
+- **Stack:** STM32, C, CAN Protocol
+- **Key Features:**
+  - **CAN 아키텍처 및 ICD 설계:** 메인 ECU, 디스플레이 클러스터, RFID 컨트롤러 노드 간 충돌 없는 통신을 위한 CAN 프레임 규격 수립
+  - **속도 제어 정밀화:** STM32 32비트 타이머 Input Capture 모드를 통한 엔코더 펄스 캡처 및 주행 속도 오차 최소화
+  - **Safe-Fail 긴급 제동:** 초음파 센서 임계치 도달 시 외부 인터럽트를 발생시켜 모터 출력을 차단하는 비상 제동 로직 탑재
+
+---
+
+## 📚 Education & Certifications
+
+- **학력:** 전자공학 및 임베디드 시스템 전공 (GPA: 4.15 / 4.5)
+- **자격증:**
+  - 정보처리기사
+  - 정보통신기술자 경력수첩 (초급)
+- **교육:** 한화비전 VEDA 4기 부트캠프
