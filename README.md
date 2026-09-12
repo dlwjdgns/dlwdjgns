@@ -5,7 +5,7 @@
 > SRS(요구사항 명세)와 ICD(인터페이스 통제) 기반의 체계적인 임베디드 및 ROS2 소프트웨어 개발을 지향합니다.
 
 - ✉️ **Contact:** junghoonlee.dev00@gmail.com
-- 📝 **Portfolio:** [Notion 포트폴리오 링크 입력]
+- 📝 **Portfolio:** https://app.notion.com/p/Lee-Jeong-Hoon-3d9a79c60d2280548747f958eb2c033c
 
 ---
 
