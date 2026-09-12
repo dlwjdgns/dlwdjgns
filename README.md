@@ -64,8 +64,3 @@
   - 정보통신기술자 경력수첩 (초급)
 - **교육:** 대한상공회의소 서울기술교육센터 AI융합 로봇 소프트웨어 개발자 과정 (수료 예정)
 
-- ### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dlwjdgns&theme=tokyonight" alt="GitHub Streak" />
-</p>
